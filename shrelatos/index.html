@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Sh-Relatos</title>
+	<!-- build:css css/app.min.css -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/master.css" rel="stylesheet">
+	<!-- /build -->
+</head>
+<body>
+	<div ng-app="relatos" class="container-fluid">
+		
+		<div class="row">
+			<div class="col-md-12" style="text-align: center;">
+				<i class="fa fa-book fa-4x" aria-hidden="true"></i>
+				<span style="font-size: 28px;">Sh Relatos</span>
+				
+			</div>
+			<div class="col-md-12" style="text-align: center;">Se tu propio editor de relatos!</div>
+		</div>
+		
+		<div class="row">
+			
+			<div class="col-md-12" style="text-align: center;">
+				<a ui-sref="newRelato" ui-sref-active="active">newRelato</a>
+    			<a ui-sref="about" ui-sref-active="active">About</a>
+				<hr>
+			</div>
+		</div>
+		
+		<ui-view></ui-view>
+		
+	</div>
+	
+	
+	<script type="text/javascript" src="jsLib/jquery.min.js"></script>
+	<script type="text/javascript" src="jsLib/angular.min.js"></script>
+	<script type="text/javascript" src="jsLib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jsLib/angular-ui-router.min.js"></script>
+	
+	<!-- build:js appz/appz.min.js -->
+	<script type="text/javascript" src="appz/app.js"></script>
+	<script type="text/javascript" src="appz/create-rel.js"></script>
+	<!-- /build -->
+</body>
+</html>
