@@ -11,6 +11,13 @@ app.config(function($stateProvider) {
 	    templateUrl: 'views/create-rel.html',
 	    controller : "createRelCtrl"
 	  }
+	  
+	  var addUser = {
+			    name: 'addUser',
+			    url: '/addUser',
+			    templateUrl: 'views/create-user.html',
+			    controller : "createUserCtrl"
+			  }
 
 	  var aboutState = {
 	    name: 'about',
@@ -19,5 +26,6 @@ app.config(function($stateProvider) {
 	  }
 
 	  $stateProvider.state(newRelato);
+	  $stateProvider.state(addUser);
 	  $stateProvider.state(aboutState);
 });

@@ -11,4 +11,4 @@ app.controller('createRelCtrl',['$scope',function($scope){
 			texto : ""
 	};
 	
-}])
+}]);
